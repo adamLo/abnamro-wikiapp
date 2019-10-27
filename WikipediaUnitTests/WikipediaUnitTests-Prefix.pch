@@ -1,0 +1,10 @@
+#ifndef Wikipedia_WikipediaUnitTests_Prefix_pch
+#define Wikipedia_WikipediaUnitTests_Prefix_pch
+
+@import XCTest;
+@import WMF;
+#import "WMFTestFixtureUtilities.h"
+#import "NSProcessInfo+WMFTestEnvironment.h"
+#import "MWKSite+Random.h"
+
+#endif
