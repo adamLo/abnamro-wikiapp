@@ -82,7 +82,7 @@ __attribute__((annotate("returns_localized_nsstring"))) static inline NSString *
             articleURL = [NSURL URLWithString:articleURLString];
             break;
         }
-        else if ([item.name isEqualToString:@"LACoordinate"]) {
+        else if ([item.name isEqualToString:@"LACoordinate"] && item.value) {
             // Adam's addition to parse coordinate passed in URL
             NSArray *coordinatesArray = [item.value componentsSeparatedByString:@","];
             if (coordinatesArray.count == 2) {
